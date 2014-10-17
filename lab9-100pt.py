@@ -13,3 +13,15 @@
 # - A temperature of over 105F
 # - A temperature of over 102F and they have been sick in the last 24 hours
 # - A temperature over 100, OR they've been sick in the last 24 hours, AND they've recently travelled to West Africa.
+
+print "How many patients are there?"
+
+userinput = int(raw_input())
+
+while userinput > 0:
+    print "Have you been sick for the past 24 hours?"
+    if userinput is "yes":
+        print "Aww"
+    else:
+        print "Then why are you here? Leave my sight!"
+    userinput = userinput - 1
