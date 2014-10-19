@@ -16,12 +16,33 @@
 
 print "How many patients are there?"
 
-userinput = int(raw_input())
+usernum1 = int(raw_input())
+userinput = raw_input()
 
-while userinput > 0:
-    print "Have you been sick for the past 24 hours?"
-    if userinput is "yes":
-        print "Aww"
-    else:
-        print "Then why are you here? Leave my sight!"
+for x in range(usernum1):
+    print "Oh... next time bring some patients then!"
     userinput = userinput - 1
+    
+    if usernum1 >= 1:
+        print "Have you been sick for the past 24 hours?"
+    else:
+        print "Then you are none of my concern! Leave my sight!"
+        
+    if userinput == "yes":
+        print "What is your temperature?"
+    else:
+        print "Then you are none of my concern! Leave my sight!"
+        
+    if usernum1 > 102:
+        print "Have you recently traveled to West Africa?"
+    else:
+        print "Then you are none of my concern! Leave my sight!"
+        
+    if userinput == "yes":
+        print "Ebola! Ebola! Ebola!"
+    else:
+        print "Oh, well then you must not have ebola..."
+        
+    userinput = userinput - 1
+    
+print "Now go die in a hole."
