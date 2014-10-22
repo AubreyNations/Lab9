@@ -28,7 +28,7 @@ for x in range(usernum):
     print "Have you recently traveled to West Africa?"
     travel = raw_input()
 
-    if temp > 105:
+    if temp > 105 and sick == "yes":
         print "You need to go to the hospital!"
 
     if temp > 102 and sick == "yes":
@@ -36,6 +36,4 @@ for x in range(usernum):
     
     if travel == "yes":
         if temp > 100 or sick == "yes":
-            print "You need to go to the hospital!"
-  
-print "Now go die in a hole."
+            print "EBOLA!!!"
